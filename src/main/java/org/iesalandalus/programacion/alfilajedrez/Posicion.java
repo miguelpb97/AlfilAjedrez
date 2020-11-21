@@ -9,6 +9,11 @@ public class Posicion {
 		return fila;
 	}
 	
+	public Posicion(int fila, char columna) {
+		setFila(fila);
+		setColumna(columna);
+	}
+	
 	private void setFila(int fila) {
 		if (fila < 1 || fila > 8) {
 			throw new IllegalArgumentException("ERROR: Fila no válida.");
