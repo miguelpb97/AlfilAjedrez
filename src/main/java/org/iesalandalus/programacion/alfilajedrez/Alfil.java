@@ -59,14 +59,12 @@ public class Alfil {
 	}
 	
 	public void mover(Direccion direccion, int pasos) throws OperationNotSupportedException  {
-		
 		if (direccion == null) {
 			throw new NullPointerException("ERROR: La dirección no puede ser nula.");
 		}
 		if (pasos <= 0) {
 			throw new IllegalArgumentException("ERROR: El número de pasos debe ser positivo.");
 		}
-		
 		switch(direccion) {
 			case ARRIBA_DERECHA: {
 				try {
